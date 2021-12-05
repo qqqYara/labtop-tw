@@ -1,0 +1,233 @@
+/* --------------------------------------------------------------------------
+ * >>> Home Page :
+ * -------------------------------------------------------------------------- */
+
+.section__first_screen {  
+  overflow: hidden;
+
+  .container {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    @include md-up {
+      padding-top: 130px;
+      padding-bottom: 200px;
+    }
+  }
+  .bg_grid__inner {
+    z-index: -1;
+  }
+  .image-bg {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  h1 {
+    position: relative;
+    padding-top: 45px;
+    margin-bottom: 40px;
+    @include md-up {
+      margin-bottom: 120px;
+    }
+    .title_vector {
+      position: absolute;
+      top: 0;
+      width: 19px;
+      @include md-up {
+        width: 27px;
+      }
+    }
+  }
+}
+.something_list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.something_list__item {
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  @include md-up {
+    width: 50%;
+    margin-bottom: 98px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include ltm-up {
+    padding-left: 100px;
+    padding-right: 46px;
+  }
+}
+.something_list__item-icon {
+  width: 36px;
+  margin-bottom: 17px; 
+  @include md-up {
+    width: 54px;
+    margin-bottom: 25px; 
+  }
+
+  svg {
+    width: 100%;
+  }
+}
+.something_list__item-title {
+  margin-bottom: 35px; 
+  @include md-up {
+    margin-bottom: 50px; 
+  }
+}
+.something_list__item-caption {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+  color: #8796AE;
+
+  @include md-up {
+    font-size: 18px;
+    line-height: 28px;    
+  }
+}
+
+.section__second_screen {
+  background: #FFFFFF;
+  .container {
+    min-height: 100vh;
+    padding-top: 90px;
+    @include md-up {
+      padding-top: 370px;
+    }
+  }
+  h1 {
+    position: relative;
+    padding-top: 45px;
+    margin-bottom: 40px;
+    color: #233148;
+    @include md-up {
+      margin-bottom: 120px;
+    }
+    .title_vector {
+      position: absolute;
+      top: 0;
+      width: 19px;
+      @include md-up {
+        width: 27px;
+      }
+    }
+  }
+  .grid_line {
+    border: 1px solid #233148;
+  }
+}
+
+.section__lightpaper {
+  .container {}
+}
+.lightpaper_content__wrapper {
+  position: relative;
+  height: 410px;
+
+   @include md-up {
+    position: absolute;
+    top: -100px;
+    height: 310px;
+    width: 100%;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    right: -100%;
+    left: -100%;
+    height: 100%;
+    background: #1F65D9;
+    z-index: 1;
+    @include md-up {
+      right: -1px;
+    }
+  }
+
+}
+.lightpaper_content__info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('../images/doc-img.svg');
+  background-repeat: no-repeat;
+  background-position: left -30px bottom -20px;
+  background-size: 200px;
+  z-index: 1;
+  @include md-up {
+    flex-direction: row;
+    background-position: left 0 bottom -47px;
+    background-size: 240px;
+  }
+  .content__info-title {
+    margin-top: auto;
+    @include md-up {
+      margin-top: 70px;
+    }
+  }
+  .content__info-caption {
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    color: #FFFFFF;
+    padding-top: 48px;
+    margin-bottom: 65px;
+
+    @include md-up {
+      padding-top: 110px;
+      margin-left: 60px;
+      font-size: 24px;
+      line-height: 34px;      
+    }
+  }
+}
+.lightpaper-btn {
+  position: absolute;
+  bottom: -27px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 74px;
+  background: #FCCF18;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  color: #233148;
+  z-index: 1;
+  cursor: pointer;
+  transition: $slowAnim;
+
+  @include md-up {
+    bottom: -37px;
+    left: 90px;
+    width: 390px;
+    font-size: 22px;
+    line-height: 27px;    
+  }
+
+  &:hover {
+    background: #233148;
+    color: #FCCF18;
+  }
+}
+.lightpaper-book-img {
+  position: absolute;
+  top: -47px;
+  right: -170px;
+  z-index: 1;
+  width: 464px;
+  @include ltm-up {
+    width: 677px;
+    top: -70px;
+    right: -20px;
+  }
+}
